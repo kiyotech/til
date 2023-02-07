@@ -12,5 +12,5 @@ Z = input[3]
 11
 22
 33
-input = readlines.map(&:to_i)
+lines = readlines.map(&:to_i)
 ---
