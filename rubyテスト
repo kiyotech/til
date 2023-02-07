@@ -14,6 +14,15 @@ Z = input[3]
 33
 lines = readlines.map(&:to_i)
 ---
+2
+2 5
+3 4
+input_line = gets.to_i
+input_line.times do
+  s = gets.chomp.split(" ")
+  print "hello = #{ s[0] } , world = #{ s[1] }\n"
+end
+---
 # 配列の要素数を調べます。
 # 中身が nil であれっても1要素と数えます。
 # 配列がからであれば ゼロを返します。
