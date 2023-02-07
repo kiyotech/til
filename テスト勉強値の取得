@@ -1,0 +1,16 @@
+一行に一つなら
+line = get
+puts line
+---
+一行に複数要素
+line = gets.split(' ')
+puts line
+*('')中に半角スペース入れない場合
+tokyo
+line =gets.split('')
+puts line
+["t", "o", "k", "y", "o"]
+---
+複数行にひとつづつ
+line = readlines.map(&:chomp)
+puts line
