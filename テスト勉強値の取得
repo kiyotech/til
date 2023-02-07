@@ -17,3 +17,37 @@ puts line
 ---
 map
 mapメソッドは、配列の要素の数だけブロック内で処理を繰り返して、新しい配列を返します。
+---
+配列の合計
+[].sum
+---
+文字列の長さ
+.length
+---
+横並びの数値をそれぞれ配列に入れて取り出す
+input = gets.split.map(&:to_i)
+N = input[0]
+X = input[1]
+Y = input[2]
+---
+条件分岐
+(1..N).each do |i|
+  if i % X == 0 && i % Y == 0
+    puts "AB"
+  elsif i % X == 0
+    puts "A"
+  elsif i % Y == 0
+    puts "B"
+  else
+    puts "N"
+  end
+end
+---
+文字を囲う
+def frame_string(str)
+  frame = "+" * (str.length + 2) 
+  framed_str = "+" + str + "+"
+  [frame, framed_str, frame].join("\n")
+end
+
+puts frame_string(gets.chomp)
