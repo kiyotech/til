@@ -14,3 +14,6 @@ puts line
 複数行にひとつづつ
 line = readlines.map(&:chomp)
 puts line
+---
+map
+mapメソッドは、配列の要素の数だけブロック内で処理を繰り返して、新しい配列を返します。
