@@ -3,3 +3,12 @@
 N = gets.to_i
 ---
 11 22 33 44
+input = gets.split.map(&:to_i)
+N = input[0]
+X = input[1]
+Y = input[2]
+Z = input[3]
+---
+11
+22
+33
