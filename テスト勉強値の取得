@@ -51,3 +51,20 @@ def frame_string(str)
 end
 
 puts frame_string(gets.chomp)
+---
+一行目だけ数値複数
+二行目以降は一行に一個
+input = gets.split.map(&:to_i)
+N = input[0]
+M = input[1]
+
+span = readlines.map(&:to_i)
+
+sum = 0
+
+span.each do |i|
+    if i <= M
+        sum = sum + i
+    end
+end
+puts sum
