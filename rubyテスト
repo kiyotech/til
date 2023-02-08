@@ -41,3 +41,10 @@ puts "h e l l o ".size #=> 10
 小数点表示
 .to_f
 ---
+array = [1,2,3,4,5]
+
+min = array.min
+max = array.max
+
+puts min
+puts max
