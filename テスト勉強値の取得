@@ -68,3 +68,4 @@ span.each do |i|
     end
 end
 puts sum
+---
