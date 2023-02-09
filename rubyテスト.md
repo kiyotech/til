@@ -71,3 +71,8 @@ p hidden_text # "T### ####### ## # ######."
 ---
 処理を止める
 break
+---
+配列の積
+array = [1,2,3,4,6,8,10]
+product = array.reduce(:*)
+puts product
