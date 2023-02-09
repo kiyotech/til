@@ -76,3 +76,6 @@ break
 array = [1,2,3,4,6,8,10]
 product = array.reduce(:*)
 puts product
+---
+配列の要素とインデックス両方取得する
+array.each_with_index do |num, i|
