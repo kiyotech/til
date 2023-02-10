@@ -3,11 +3,12 @@ line = gets.chomp.to_s
 puts line
 ---
 ## 一行に複数要素
-line = gets.split(' ')
+line = gets.chomp.split(' ')
 puts line
 *('')中に半角スペース入れない場合
 tokyo
-line =gets.split('')
+line =gets.chomp.
+split('')
 puts line
 ["t", "o", "k", "y", "o"]
 ---
@@ -44,7 +45,7 @@ strAry = str.split(/[- ]/)
 この場合「-」と「 」で分割している
 ["Border", "Left", "is", "Red"]となる
 ---
-## 指定の文字の数を求める
+## 指定の文字の文字数を求める
  A = strAry[i].scan('<').length
 ---
 ## 置換
@@ -66,3 +67,6 @@ str[a-1..b-1] = str[a-1..b-1].upcase
 ## 文字列に含まれる特定のもののかず
 puts s.count(c)
 ---
+## 文字列の要素を半角スペース開けて表示
+str = gets.chomp
+puts "#{str[0]} #{str[1]}"
