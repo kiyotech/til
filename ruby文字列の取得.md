@@ -1,5 +1,5 @@
 ## 一行に一つなら
-line = get.to_s
+line = gets.chomp.to_s
 puts line
 ---
 ## 一行に複数要素
