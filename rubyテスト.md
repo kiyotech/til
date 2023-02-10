@@ -1,4 +1,4 @@
-入力数値の取り出し方
+入力数値の取り出し方　
 １１１
 N = gets.to_i
 小数点表示
@@ -23,8 +23,8 @@ lines = readlines.map(&:to_i)
 3 4
 input_line = gets.to_i
 input_line.times do
-  s = gets.chomp.split(" ")
-  print "hello = #{ s[0] } , world = #{ s[1] }\n"
+  X = gets.split.map(&:to_i)
+
 end
 ---
 # 配列の要素数を調べます。
@@ -79,3 +79,8 @@ puts product
 ---
 配列の要素とインデックス両方取得する
 array.each_with_index do |num, i|
+---
+配列から５以上の数値だけ取って新しい配列を作る
+array = [4, 0, 5, -1, 3, 10, 6, -8]
+new_array = array.select { |e| e >= 5 }
+puts new_array.sum
