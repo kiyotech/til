@@ -55,3 +55,7 @@ p hidden_text # "T### ####### ## # ######."
 aからb文字目まで
 line = gets.chomp.to_s
 puts line[a - 1, b - 1]
+---
+## 文字列の頭文字を大文字
+input = gets.chomp
+puts input.upcase
