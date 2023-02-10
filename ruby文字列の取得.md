@@ -51,3 +51,7 @@ strAry = str.split(/[- ]/)
 hidden_text = sample_text.gsub(/[a-z]/, "#")
 p hidden_text # "T### ####### ## # ######."
 ---
+文字列の指定の区間を抽出
+aからb文字目まで
+line = gets.chomp.to_s
+puts line[a - 1, b - 1]
