@@ -70,3 +70,12 @@ puts s.count(c)
 ## 文字列の要素を半角スペース開けて表示
 str = gets.chomp
 puts "#{str[0]} #{str[1]}"
+---
+## 配列の中の重複をなくす
+array = ["HND", "NRT", "KIX", "NGO", "NGO"] 
+new_array == array.uniq
+puts new_array #=> ["HND", "NRT", "KIX", "NGO"] 
+---
+## 重複してる要素を抽出
+array = ["HND", "NRT", "KIX", "NGO", "NGO", "NGO", "NGO", "NGO"]
+puts array.select{ |e| array.count(e) > 1 }.uniq
