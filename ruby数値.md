@@ -42,8 +42,12 @@ puts (1..5).size #=> 5
 ### 半角スペースも1文字として評価されます。
 puts "h e l l o ".size #=> 10
 ---
-
+配列の積
+array = [1,2,3,4,6,8,10]
+product = array.reduce(:*)
+puts product
 ---
+## 配列の要素の最大・最小
 array = [1,2,3,4,5]
 
 min = array.min
@@ -52,31 +56,10 @@ max = array.max
 puts min
 puts max
 ---
-文字列から指定の文字を削除
-S = gets.to_s
-puts S.delete!("aeiouAEIOU")
----
-文字列を分割
-str = "Border-Left is Red"
-strAry = str.split(/[- ]/)
-この場合「-」と「 」で分割している
-["Border", "Left", "is", "Red"]となる
----
-指定の文字の数を求める
-    A = strAry[i].scan('<').length
----
-置換
-hidden_text = sample_text.gsub(/[a-z]/, "#")
-p hidden_text # "T### ####### ## # ######."
----
 処理を止める
 break
 ---
-配列の積
-array = [1,2,3,4,6,8,10]
-product = array.reduce(:*)
-puts product
----
+
 配列の要素とインデックス両方取得する
 array.each_with_index do |num, i|
 ---
