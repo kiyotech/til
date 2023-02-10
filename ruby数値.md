@@ -67,3 +67,17 @@ array.each_with_index do |num, i|
 array = [4, 0, 5, -1, 3, 10, 6, -8]
 new_array = array.select { |e| e >= 5 }
 puts new_array.sum
+---
+## 配列の並び替え
+昇順
+num = gets.split.map(&:to_i)
+puts num.sort
+（破壊的は）.sort!
+降順
+p array.sort.reverse
+array.sort!.reverse!
+---
+## 数値と文字列の含まれる配列を数値で並び替える
+array.sort_by { |c, num| num }.each do |c, num|
+  puts c
+end
