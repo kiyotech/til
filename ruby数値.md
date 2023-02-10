@@ -42,7 +42,7 @@ puts (1..5).size #=> 5
 ### 半角スペースも1文字として評価されます。
 puts "h e l l o ".size #=> 10
 ---
-配列の積
+## 配列の積
 array = [1,2,3,4,6,8,10]
 product = array.reduce(:*)
 puts product
@@ -56,14 +56,14 @@ max = array.max
 puts min
 puts max
 ---
-処理を止める
+## 処理を止める
 break
 ---
 
-配列の要素とインデックス両方取得する
+## 配列の要素とインデックス両方取得する
 array.each_with_index do |num, i|
 ---
-配列から５以上の数値だけ取って新しい配列を作る
+## 配列から５以上の数値だけ取って新しい配列を作る
 array = [4, 0, 5, -1, 3, 10, 6, -8]
 new_array = array.select { |e| e >= 5 }
 puts new_array.sum
