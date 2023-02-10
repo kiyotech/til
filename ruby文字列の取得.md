@@ -47,3 +47,7 @@ strAry = str.split(/[- ]/)
 ## 指定の文字の数を求める
  A = strAry[i].scan('<').length
 ---
+置換
+hidden_text = sample_text.gsub(/[a-z]/, "#")
+p hidden_text # "T### ####### ## # ######."
+---
