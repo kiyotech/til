@@ -78,6 +78,14 @@ p array.sort.reverse
 array.sort!.reverse!
 ---
 ## 数値と文字列の含まれる配列を数値で並び替える
-array.sort_by { |c, num| num }.each do |c, num|
-  puts c
+n = gets.to_i
+list = []
+
+n.times do
+  char, num = gets.chomp.split
+  list << [char, num.to_i]
+end
+
+list.sort_by { |char, num| num }.each do |char, num|
+  puts char
 end
