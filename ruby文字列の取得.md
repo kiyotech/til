@@ -47,15 +47,22 @@ strAry = str.split(/[- ]/)
 ## 指定の文字の数を求める
  A = strAry[i].scan('<').length
 ---
-置換
+## 置換
 hidden_text = sample_text.gsub(/[a-z]/, "#")
 p hidden_text # "T### ####### ## # ######."
 ---
-文字列の指定の区間を抽出
-aからb文字目まで
+## 文字列の指定の区間を抽出
+a文字目からb文字分
 line = gets.chomp.to_s
-puts line[a - 1, b - 1]
+puts line[a - 1, b ]
 ---
 ## 文字列の頭文字を大文字
 input = gets.chomp
 puts input.upcase
+---
+## 文字列のaからb文字目までを大文字にする
+str[a-1..b-1] = str[a-1..b-1].upcase
+---
+## 文字列に含まれる特定のもののかず
+puts s.count(c)
+---
