@@ -79,3 +79,7 @@ puts new_array #=> ["HND", "NRT", "KIX", "NGO"]
 ## 重複してる要素を抽出
 array = ["HND", "NRT", "KIX", "NGO", "NGO", "NGO", "NGO", "NGO"]
 puts array.select{ |e| array.count(e) > 1 }.uniq
+---
+## join は Ruby の文字列メソッドです。配列の要素を連結して1つの文字列にまとめます。引数に渡した文字列が区切り文字となります。
+array = ["paiza", "paiza"]
+puts array.join(" ")
