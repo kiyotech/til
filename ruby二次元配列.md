@@ -50,3 +50,36 @@ enemy_img.each do |line|
     end
     puts ""
 end
+---
+## インデックスも表示する
+landmap = Array.new(10).map{Array.new(20,"森")}
+landmap.each_with_index do |line, i|
+    print "#{i}:"
+    line.each do |area|
+        print area
+    end
+    puts ""
+end
+---
+## 箱に入るボール
+input = gets.split.map(&:to_i)
+n = input[0]
+r = input[1]
+array = []
+n.times do 
+  x = gets.split.map(&:to_i)
+  array << x
+end
+array2 = []
+array.each_with_index do |line, i|
+    sum = 0
+    line.each do |dot|
+        if dot >= r * 2
+            sum += 1
+        end
+    end
+    if sum == 3
+        array2 << i + 1
+    end
+end
+puts array2.sort
