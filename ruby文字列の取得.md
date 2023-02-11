@@ -14,7 +14,7 @@ puts line
 ---
 ## 複数行にひとつづつ文字列
 lines = readlines.map(&:chomp)
-puts line
+puts lines
 ---
 ## 文字列の長さ
 .length
