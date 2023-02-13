@@ -86,3 +86,22 @@ puts array2.sort
 ---
 ## 二次元配列の行列入れ替え
 .transpose
+---
+## 五目並べの縦方向
+array = []
+while line = gets
+    line.chomp!
+    array.push(line.split(""))
+end
+array2 = array.transpose
+n = array2.length
+(0...n).each do |i|
+    array2[i] = array2[i].join
+end
+if array2.include?("OOOOO")
+    puts "O"
+elsif array2.include?("XXXXX")
+    puts "X"
+else
+    puts "D"
+end
