@@ -105,3 +105,26 @@ elsif array2.include?("XXXXX")
 else
     puts "D"
 end
+---
+## 五目並べの斜め
+array = []
+while line = gets
+    line.chomp!
+    array.push(line.split(""))
+end
+n = array.length
+array1 = []
+array2 = []
+(0...n).each do |i|
+    array1 << array[i][i]
+    array2 << array[i][n - 1 - i]
+end
+array1 = array1.join
+array2 = array2.join
+if array1 == "OOOOO" || array2 == "OOOOO"
+    puts "O"
+elsif array1 == "XXXXX" || array2 == "XXXXX"
+    puts "X"
+else
+    puts "D"
+end
