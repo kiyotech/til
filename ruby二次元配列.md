@@ -83,3 +83,6 @@ array.each_with_index do |line, i|
     end
 end
 puts array2.sort
+---
+## 二次元配列の行列入れ替え
+.transpose
