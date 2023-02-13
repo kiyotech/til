@@ -83,3 +83,10 @@ puts array.select{ |e| array.count(e) > 1 }.uniq
 ## join は Ruby の文字列メソッドです。配列の要素を連結して1つの文字列にまとめます。引数に渡した文字列が区切り文字となります。
 array = ["paiza", "paiza"]
 puts array.join(" ")
+---
+## アルファベットの並びから特定のindex間の値を取得
+alphabets = ("A".."Z").to_a
+a = alphabets.index("#{f}")
+b = alphabets.index("#{l}")
+puts alphabets[a..b]
+    
