@@ -92,6 +92,3 @@ puts alphabets[a..b]
 ---
 ## 文字列を１文字ごと分解して二重配列の縦横を入れ替える
 transposed = lines.map(&:chars).transpose.map(&:join)
-
-str = gets.chompいレカ
-str = gets.chomp
