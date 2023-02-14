@@ -7,8 +7,7 @@ line = gets.chomp.split(' ')
 puts line
 *('')中に半角スペース入れない場合
 tokyo
-line =gets.chomp.
-split('')
+line =gets.chomp.split('')
 puts line
 ["t", "o", "k", "y", "o"]
 ---
@@ -89,4 +88,10 @@ alphabets = ("A".."Z").to_a
 a = alphabets.index("#{f}")
 b = alphabets.index("#{l}")
 puts alphabets[a..b]
-    
+
+---
+## 文字列を１文字ごと分解して二重配列の縦横を入れ替える
+transposed = lines.map(&:chars).transpose.map(&:join)
+
+str = gets.chompいレカ
+str = gets.chomp
