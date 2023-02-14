@@ -7,8 +7,6 @@ while line = gets
 end
 p enemy_img
 ```
-
----
 ```
 count = gets.to_i
 puts("データ個数 #{count}")
@@ -18,8 +16,6 @@ for i in 1..count
     puts "hello #{line}"
 end
 ```
-
----
 ```
 team = []
 while line = gets
