@@ -128,3 +128,6 @@ elsif array1 == "XXXXX" || array2 == "XXXXX"
 else
     puts "D"
 end
+---
+## 文字列を１文字ごと分解して二重配列の縦横を入れ替える
+transposed = lines.map(&:chars).transpose.map(&:join)
