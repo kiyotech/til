@@ -1,11 +1,15 @@
 ## 標準入力からの二次元配列の作り方（区切りが”,"の場合）
+```
 array = []
 while line = gets
     line.chomp!
     array.push(line.split(","))
 end
 p enemy_img
+```
+
 ---
+```
 count = gets.to_i
 puts("データ個数 #{count}")
 
@@ -13,7 +17,10 @@ for i in 1..count
     line = gets
     puts "hello #{line}"
 end
+```
+
 ---
+```
 team = []
 while line = gets
     line.chomp!
@@ -28,8 +35,11 @@ team.each do |line|
     puts "</tr>"
 end
   puts "</table>"
+```
+
 ---
 ## 二次元配列の値の取得の仕方
+```
 enemy_img = [[0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
              [1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1],
              [1,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1],
@@ -50,8 +60,11 @@ enemy_img.each do |line|
     end
     puts ""
 end
+```
+
 ---
 ## インデックスも表示する
+```
 landmap = Array.new(10).map{Array.new(20,"森")}
 landmap.each_with_index do |line, i|
     print "#{i}:"
@@ -60,8 +73,11 @@ landmap.each_with_index do |line, i|
     end
     puts ""
 end
+```
+
 ---
 ## 箱に入るボール
+```
 input = gets.split.map(&:to_i)
 n = input[0]
 r = input[1]
@@ -83,11 +99,17 @@ array.each_with_index do |line, i|
     end
 end
 puts array2.sort
+```
+
 ---
 ## 二次元配列の行列入れ替え
+```
 .transpose
+```
+
 ---
 ## 五目並べの縦方向
+```
 array = []
 while line = gets
     line.chomp!
@@ -105,8 +127,10 @@ elsif array2.include?("XXXXX")
 else
     puts "D"
 end
+```
 ---
 ## 五目並べの斜め
+```
 array = []
 while line = gets
     line.chomp!
@@ -128,6 +152,10 @@ elsif array1 == "XXXXX" || array2 == "XXXXX"
 else
     puts "D"
 end
+```
+
 ---
 ## 文字列を１文字ごと分解して二重配列の縦横を入れ替える
+```
 transposed = lines.map(&:chars).transpose.map(&:join)
+```
