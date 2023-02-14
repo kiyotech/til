@@ -8,6 +8,8 @@ G 4
 B 70
 A 10
 B 5
+```
+```
 n = gets.to_i
 h = {}
 n.times do
