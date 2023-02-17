@@ -125,3 +125,10 @@ list.sort_by { |char, num| num }.each do |char, num|
 end
 ```
 ## 割り算の小数点は切り捨て
+---
+## 逆順
+```ruby
+a = [ "a", "b", "c" ]
+a.reverse_each {|x| print x, " " }
+# => c b a
+```
