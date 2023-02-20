@@ -73,7 +73,7 @@ end
 
 ---
 ## 箱に入るボール
-```euby
+```ruby
 input = gets.split.map(&:to_i)
 n = input[0]
 r = input[1]
