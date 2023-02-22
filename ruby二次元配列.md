@@ -186,3 +186,28 @@ shuffled = top.zip(bottom)
 ```
 
 ---
+## カードのシャッフル
+```ruby
+K = gets.to_i
+cards = []
+suit = ["S","H","D","C"]
+suit.each do |suit|
+  (1..13).each do |num|
+    cards << "#{suit}_#{num}"
+  end
+end
+top = cards.slice(0, 26)
+bottom = cards.slice(26, 52)
+if K == 0
+    puts cards
+else
+    flat_shuffled = []
+    K.times do
+        shuffled = top.zip(bottom)
+        flat_shuffled = shuffled.flatten
+        top = flat_shuffled.slice(0, 26)
+        bottom = flat_shuffled.slice(26, 52)
+    end
+    puts flat_shuffled
+end
+```
