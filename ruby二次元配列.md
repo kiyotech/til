@@ -171,3 +171,9 @@ end
 ```ruby
 transposed = lines.map(&:chars).transpose.map(&:join)
 ```
+
+---
+## 二個の配列を交互に取り出した二次元配列にする
+```ruby
+shuffled = top.zip(bottom)
+```
