@@ -28,7 +28,12 @@ input_line.times do
 
 end
 ```
-
+---
+## 数値をバラバラに配列へ収納
+```ruby
+line = gets.chomp.split('').map(&:to_i)
+p line
+```
 ---
 ### 配列の要素数を調べます。
 ### 中身が nil であれっても1要素と数えます。
