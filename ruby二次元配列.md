@@ -42,7 +42,22 @@ team.each do |line|
 end
   puts "</table>"
 ```
+数値を二次元配列へ
+```ruby
+3
+1 2 3
+4 5 6
+7 8 9
 
+n = gets.to_i
+array = []
+n.times do
+    line = gets.split.map(&:to_i)
+    array << line
+end
+p array
+/ => [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
 ---
 ## 二次元配列の値の取得の仕方
 ```ruby
