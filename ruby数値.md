@@ -72,7 +72,12 @@ max = array.max
 puts min
 puts max
 ```
-
+---
+## 比較し最大最小を求める
+```ruby
+max = Math.max(2,4,7,8)
+min = Math.min(2,4,7,8)
+```
 ---
 ## 処理を止める
 ```ruby
