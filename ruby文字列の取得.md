@@ -150,3 +150,16 @@ puts alphabets[a..b]
 transposed = lines.map(&:chars).transpose.map(&:join)
 ```
 
+---
+## 文字列の配列から数値を選びそのインデックスを取得する
+```ruby
+s = gets.chomp.split('')
+indexes = []
+s.each_with_index do |element, index|
+  if element.match(/\d/) # elementが数字である場合
+    indexes << index # indexを追加する
+  end
+end
+puts indexes.inspect
+```
+---
