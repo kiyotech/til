@@ -162,4 +162,13 @@ s.each_with_index do |element, index|
 end
 puts indexes.inspect
 ```
+インデックス間の値をそれぞれ取得
+```ruby
+indexes.each_with_index do |start, i|
+  (i...indexes.length).each do |j|
+    last = indexes[j]
+    puts s[start..last].join
+  end
+end
+```
 ---
