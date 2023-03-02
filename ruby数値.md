@@ -142,3 +142,18 @@ a = [ "a", "b", "c" ]
 a.reverse_each {|x| print x, " " }
 # => c b a
 ```
+
+---
+## 配列の後半を切り出して前に持ってくる
+```ruby
+
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# 配列の最後の4つを切り出す
+last_four = array.pop(4)
+
+# last_fourを配列の先頭に結合
+array = last_four + array
+
+puts array.inspect # [7, 8, 9, 10, 1, 2, 3, 4, 5, 6]
+```
