@@ -119,6 +119,11 @@ p array.sort.reverse
 array.sort!.reverse!
 ```
 
+並び替える前のインデックスを保持したまま並び替え
+```ruby
+order_i = order.each_with_index.sort
+```
+
 ---
 ## 数値と文字列の含まれる配列を数値で並び替える
 ```ruby
@@ -163,3 +168,4 @@ puts array.inspect # [7, 8, 9, 10, 1, 2, 3, 4, 5, 6]
 ```ruby
 integers = strings.map{|n| n.to_i}
 ```
+
