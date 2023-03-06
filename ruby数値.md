@@ -157,3 +157,9 @@ array = last_four + array
 
 puts array.inspect # [7, 8, 9, 10, 1, 2, 3, 4, 5, 6]
 ```
+
+---
+## 文字列の配列を数値の配列へ
+```ruby
+integers = strings.map{|n| n.to_i}
+```
