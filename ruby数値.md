@@ -169,3 +169,6 @@ puts array.inspect # [7, 8, 9, 10, 1, 2, 3, 4, 5, 6]
 integers = strings.map{|n| n.to_i}
 ```
 
+---
+## shift, unshift, pop, push
+https://qiita.com/kaichan/items/a215684b539a0b355944
