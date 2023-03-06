@@ -23,9 +23,9 @@ lines = readlines.map(&:to_i)
 2 5
 3 4
 input_line = gets.to_i
+array = []
 input_line.times do
-  X = gets.split.map(&:to_i)
-
+  array << gets.split.map(&:to_i)
 end
 ```
 ---
