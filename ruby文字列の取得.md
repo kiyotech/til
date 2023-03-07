@@ -171,4 +171,7 @@ indexes.each_with_index do |start, i|
   end
 end
 ```
+
 ---
+## length、size、count
+https://qiita.com/motoki4917/items/ffc89d955e20b91d1014
