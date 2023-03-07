@@ -77,6 +77,10 @@ max = array.max
 puts min
 puts max
 ```
+## 最大値のインデックスを求める
+```ruby
+p a.index(a.max)
+```
 ---
 ## 比較し最大最小を求める
 ```ruby
