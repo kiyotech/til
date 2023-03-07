@@ -172,3 +172,15 @@ integers = strings.map{|n| n.to_i}
 ---
 ## shift, unshift, pop, push
 https://qiita.com/kaichan/items/a215684b539a0b355944
+
+---
+## chunk_while 連続した部分をまとめる
+https://docs.ruby-lang.org/ja/2.7.0/method/Enumerable/i/chunk_while.html
+
+```ruby
+n = gets.to_i
+lines = readlines.map(&:to_i)
+lines = lines.sort
+arr = lines.chunk_while {|i, j| i+1 == j }.to_a
+p arr
+```
