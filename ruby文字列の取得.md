@@ -175,3 +175,10 @@ end
 ---
 ## length、size、count
 https://qiita.com/motoki4917/items/ffc89d955e20b91d1014
+
+---
+## アルファベットの配列を作る
+```ruby
+array = ('a'..'z').to_a
+p array
+```
