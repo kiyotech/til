@@ -192,3 +192,9 @@ lines = lines.sort
 arr = lines.chunk_while {|i, j| i+1 == j }.to_a
 p arr
 ```
+
+---
+## 配列を半角スペース挟んで出力
+```ruby
+puts ans.join(" ")
+```
