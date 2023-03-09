@@ -182,3 +182,8 @@ https://qiita.com/motoki4917/items/ffc89d955e20b91d1014
 array = ('a'..'z').to_a
 p array
 ```
+---
+## 文字列の先頭から０に一致する文字数を求める
+```ruby
+.match(/^0*/)[0].size
+```
