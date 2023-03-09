@@ -198,3 +198,14 @@ p arr
 ```ruby
 puts ans.join(" ")
 ```
+
+---
+## 配列を半角スペース区切りで出力
+```ruby
+# 文字列として出力している
+array = []
+for i in 1..9
+    array << 8*i
+end
+puts array.join(" ")
+```
