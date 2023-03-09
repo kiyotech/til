@@ -231,3 +231,10 @@ puts binary
 ```ruby
 puts (1..5).reduce(:+)
 ```
+---
+## 階乗
+```ruby
+N = gets.chomp.to_i
+
+puts (1..N).reduce(:*)
+```
