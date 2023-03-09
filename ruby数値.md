@@ -209,3 +209,18 @@ for i in 1..9
 end
 puts array.join(" ")
 ```
+
+---
+## 十進数を二進数へ変換
+```ruby
+n = gets.to_i
+binary = 0
+i = 0
+while n > 0
+  digit_num = n % 2
+  binary += digit_num * 10 ** i
+  n /= 2
+  i += 1
+end
+puts binary
+```
