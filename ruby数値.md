@@ -29,9 +29,9 @@ input_line.times do
 end
 ```
 ---
-## 数値をバラバラに配列へ収納
+## 半角スペースで区切られた数値をバラバラに配列へ収納
 ```ruby
-line = gets.chomp.split('').map(&:to_i)
+line = gets.chomp.split(' ').map(&:to_i)
 p line
 ```
 ---
