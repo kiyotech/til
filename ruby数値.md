@@ -242,5 +242,6 @@ puts (1..N).reduce(:*)
 ---
 ## 数値の配列を重複なしで作る
 ```ruby
+require 'set' # setライブラリを呼び出す
 a = gets.split.map(&:to_i).to_set
 ```
