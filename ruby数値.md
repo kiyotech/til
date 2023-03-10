@@ -252,3 +252,19 @@ a = gets.split.map(&:to_i).to_set
 if array.include?(x)
   puts ,,,
 ```
+---
+## 既存の配列のコピーを先頭から順番に作っていく
+```ruby
+n = gets.to_i
+a = gets.split.map(&:to_i)
+
+array = [a[0]]
+(1...n).each do |i|
+    if array.include?(a[i])
+        puts "Yes"
+    else
+        puts "No"
+        array << a[i]
+    end
+end
+```
