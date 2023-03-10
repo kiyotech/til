@@ -238,3 +238,9 @@ N = gets.chomp.to_i
 
 puts (1..N).reduce(:*)
 ```
+
+---
+## 数値の配列を重複なしで作る
+```ruby
+a = gets.split.map(&:to_i).to_set
+```
