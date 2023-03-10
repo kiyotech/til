@@ -245,3 +245,10 @@ puts (1..N).reduce(:*)
 require 'set' # setライブラリを呼び出す
 a = gets.split.map(&:to_i).to_set
 ```
+
+---
+## 配列にその数値があるか確認
+```ruby
+if array.include?(x)
+  puts ,,,
+```
