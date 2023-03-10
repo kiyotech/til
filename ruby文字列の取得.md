@@ -105,6 +105,15 @@ str[a-1..b-1] = str[a-1..b-1].upcase
 ```
 puts s.count(c)
 ```
+## 含まれる数を数えるときは、文字列に変換したほうがいい
+```ruby
+s = gets.chomp.to_s
+ans = []
+("a".."z").each do |str|
+    ans << s.count(str)
+end
+puts ans.join(" ")
+```
 
 ---
 ## 文字列の要素を半角スペース開けて表示
