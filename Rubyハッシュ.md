@@ -94,3 +94,28 @@ hash1.each do |name, blood|
     end
 end
 ```
+
+---
+## 配列を配列でeachしたいときはハッシュを使おう
+```ruby
+n, q = gets.split.map(&:to_i)
+
+h = {}
+n.times do |i|
+    s = gets.chomp
+    if h.key?(s)
+        next
+    else
+        h[s] = i + 1
+    end
+end
+
+q.times do
+    t = gets.chomp
+    if h.key?(t)
+        puts h[t]
+    else
+        puts "-1"
+    end
+end
+```
