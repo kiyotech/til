@@ -119,3 +119,22 @@ q.times do
     end
 end
 ```
+---
+## ハッシュにこのキーが含まれていいるか確認する場合h.key?()
+```ruby
+n, m = gets.split.map(&:to_i)
+h = {}
+n.times do
+    a, b = gets.chomp.split(' ')
+    h[a] = b
+end
+m.times do
+    c = gets.chomp
+    if h.key?(c)
+        puts h[c]
+    else
+        puts "-1"
+    end
+
+end
+```
