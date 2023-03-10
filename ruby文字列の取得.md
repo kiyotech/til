@@ -126,7 +126,7 @@ puts "#{str[0]} #{str[1]}"
 ## 配列の中の重複をなくす
 ```
 array = ["HND", "NRT", "KIX", "NGO", "NGO"] 
-new_array == array.uniq
+new_array = array.uniq
 puts new_array #=> ["HND", "NRT", "KIX", "NGO"] 
 ```
 
