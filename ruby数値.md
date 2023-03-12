@@ -268,3 +268,16 @@ array = [a[0]]
     end
 end
 ```
+
+---
+##　2つの変数の入れ替え
+```ruby
+a = 10
+b = 20
+puts a  # =>10
+puts b  # =>20
+
+a, b = b, a
+puts a  # =>20
+puts b  # =>10
+```
