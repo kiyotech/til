@@ -187,6 +187,10 @@ https://qiita.com/kaichan/items/a215684b539a0b355944
 配列.insert(挿入位置, 挿入する要素)
 ```
 ---
+## 要素の削除
+https://uxmilk.jp/24060
+
+---
 ## chunk_while 連続した部分をまとめる
 https://docs.ruby-lang.org/ja/2.7.0/method/Enumerable/i/chunk_while.html
 
