@@ -292,3 +292,15 @@ a, b = b, a
 puts a  # =>20
 puts b  # =>10
 ```
+---
+## 配列のの総当たりの掛け算
+```ruby
+n = gets.to_i
+a = n.times.map { gets.to_i }
+
+n.times do |i|
+    i.times do |j|
+        puts a[i] * a[j]
+    end
+end
+```
