@@ -188,7 +188,7 @@ https://qiita.com/kaichan/items/a215684b539a0b355944
 ```
 ---
 ## 要素の削除
-https://uxmilk.jp/24060
+https://qiita.com/hapiblog2020/items/6bdc2f6f2a0a0388ab89
 
 ---
 ## chunk_while 連続した部分をまとめる
