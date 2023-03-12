@@ -182,6 +182,11 @@ integers = strings.map{|n| n.to_i}
 https://qiita.com/kaichan/items/a215684b539a0b355944
 
 ---
+## 要素の挿入
+```ruby
+配列.insert(挿入位置, 挿入する要素)
+```
+---
 ## chunk_while 連続した部分をまとめる
 https://docs.ruby-lang.org/ja/2.7.0/method/Enumerable/i/chunk_while.html
 
