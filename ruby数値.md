@@ -18,6 +18,8 @@ Z = input[3]
 22
 33
 lines = readlines.map(&:to_i)
+or
+a = N.times.map{gets.chomp.to_i}
 ---
 2
 2 5
