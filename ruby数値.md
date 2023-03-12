@@ -103,7 +103,8 @@ array.each_with_index do |num, i|
 ```
 
 ---
-## 配列から５以上の数値だけ取って新しい配列を作る
+## 配列から５以上の数値だけ取って新しい配列を作る select
+https://www.sejuku.net/blog/19226
 ```ruby
 array = [4, 0, 5, -1, 3, 10, 6, -8]
 new_array = array.select { |e| e >= 5 }
