@@ -320,3 +320,9 @@ week = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"]
 puts week[n % 7]
 
 ```
+---
+## 桁数は文字列に変換したら楽
+```ruby
+n = gets.chomp
+puts n.length
+```
