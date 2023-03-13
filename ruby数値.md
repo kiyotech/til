@@ -311,3 +311,12 @@ end
 a.eve?
 a.odd?
 ```
+---
+## 曜日判定
+```ruby
+n = gets.to_i
+week = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"]
+
+puts week[n % 7]
+
+```
