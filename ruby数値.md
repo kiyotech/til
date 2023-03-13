@@ -345,3 +345,15 @@ end
 
 puts ans
 ```
+### ライブラリを使う場合
+```ruby
+n = gets.to_i
+count = 0
+require 'prime'
+(2..n).each do |v, i|
+    if v.prime? 
+        count += 1
+    end
+end
+puts count
+```
