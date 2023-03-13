@@ -305,3 +305,9 @@ n.times do |i|
     end
 end
 ```
+---
+## 偶数奇数判定
+```ruby
+a.eve?
+a.odd?
+```
