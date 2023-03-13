@@ -8,7 +8,7 @@ to_iメソッドが文字→数値
 to_sメソッドが数値→文字
 ---
 11 22 33 44
-input = gets.split.map(&:to_i)
+line = gets.split.map(&:to_i)
 N = input[0]
 X = input[1]
 Y = input[2]
