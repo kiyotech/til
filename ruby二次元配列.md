@@ -15,7 +15,7 @@ while line = gets
     line.chomp!
     array.push(line.split(","))
 end
-p enemy_img
+p array
 ```
 ```ruby
 count = gets.to_i
