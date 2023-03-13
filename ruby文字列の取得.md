@@ -196,3 +196,28 @@ p array
 ```ruby
 .match(/^0*/)[0].size
 ```
+
+---
+## 大文字小文字判定
+```ruby
+if c.ord >= "A".ord && c.ord <= "Z".ord
+puts "YES"
+else
+puts "NO"
+end
+```
+```ruby
+def is_lower?(c)
+  c >= 'a' && c <= 'z'
+end
+```
+```ruby
+def is_upper?(c)
+  ! is_lower(c)
+end
+```
+```ruby
+def is_lower?(c)
+    c != c.upcase
+end
+```
