@@ -226,3 +226,15 @@ else
     puts flat_shuffled
 end
 ```
+## 二重配列の総当たり計算
+```ruby
+n = gets.to_i
+line = gets.split.map(&:to_i)
+line.each_with_index do |v, i|
+    array = []
+    line.each_with_index do |w, j|
+        array << v * w
+    end
+    puts array.join(" ")
+end
+```
