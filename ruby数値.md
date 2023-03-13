@@ -326,3 +326,22 @@ puts week[n % 7]
 n = gets.chomp
 puts n.length
 ```
+---
+## 整数n以下の数字で素数の数
+```ruby
+n = gets.to_i
+
+ans = 0
+(2..n).each do |i|
+    is_prime = true
+    (2..Math.sqrt(i).floor).each do |j|
+        if i % j == 0
+            is_prime = false
+            break
+        end
+    end
+    ans += 1 if is_prime
+end
+
+puts ans
+```
