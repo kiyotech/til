@@ -217,7 +217,15 @@ def is_upper?(c)
 end
 ```
 ```ruby
+c = gets.chomp
+
 def is_lower?(c)
     c != c.upcase
+end
+
+if is_lower?(c) == false
+    puts "YES"
+else
+    puts "NO"
 end
 ```
