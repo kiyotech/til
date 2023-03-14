@@ -117,3 +117,20 @@ for i in 2..n
 end
 p dp[n]
 ```
+```ruby
+八百屋にて、りんご2個が a 円で、りんご5個が b 円で売られています。
+りんごの買い方を工夫したとき、n 個のりんごを手に入れるために必要な金額の最小値はいくらでしょうか。なお、買い方を工夫した結果、買ったりんごが n+1 個以上になってもよいものとします。
+n, a, b = gets.chomp.split.map(&:to_i)
+
+dp = Array.new(n + 5, Float::INFINITY)
+
+dp[0] = 0
+dp[1] = a
+
+(2..n+4).each do |i|
+    dp[i] = [dp[i], dp[i - 2] + a].min if i >= 2
+    dp[i] = [dp[i], dp[i - 5] + b].min if i >= 5
+end
+
+puts dp[n..].min
+```
