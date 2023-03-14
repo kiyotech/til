@@ -83,3 +83,17 @@ for i in 2..n
     a[i] = a[i-1] + a[i-2]
 end
 puts a[n]
+```
+登る段数も変わる時
+```ruby
+n, a, b =gets.split.map(&:to_i)
+dp = [0]*(n+1)
+dp[0] = 1
+
+for i in 1..n
+    dp[i] = dp[i] + dp[i - a] if i >= a
+    dp[i] = dp[i] + dp[i - b] if i >= b
+end
+
+puts dp[n]
+```
