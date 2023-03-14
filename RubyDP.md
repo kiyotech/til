@@ -134,3 +134,17 @@ end
 
 puts dp[n..].min
 ```
+```ruby
+n, x, a, y, b = gets.split.map(&:to_i)
+dp = Array.new(n + 1000, Float::INFINITY)
+
+dp[0] = 0
+dp[1] = a
+
+(2..n+999).each do |i|
+    dp[i] = [dp[i], dp[i - x] + a].min if i >= x
+    dp[i] = [dp[i], dp[i - y] + b].min if i >= y
+end
+
+puts dp[n..].min
+```
