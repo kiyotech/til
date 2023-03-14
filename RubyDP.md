@@ -188,3 +188,25 @@ end
 
 puts dp.max
 ```
+## 部分和問題
+1 ~ n の番号がついた n 個のおもりがあり、おもり i の重さは a_i です。
+おもりを何個か選んで重さの和が x となるようにすることができるかどうか判定してください。なお、同じおもりを2個以上選ぶことはできません。
+https://paiza.jp/works/mondai/dp_primer/dp_primer_partial_sums_step0/edit?language_uid=ruby
+```ruby
+n, x = gets.chomp.split().map(&:to_i)
+a = n.times.map { gets.chomp.to_i }
+
+dp = [false] * (x + 1)
+dp[0] = true
+
+a.each do |val|
+    (x).downto(val) do |j|
+        dp[j] ||= dp[j - val]
+    end
+end
+
+if dp[x]
+    puts "yes"
+else
+    puts "no"
+end
